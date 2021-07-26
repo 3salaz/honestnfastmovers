@@ -20,8 +20,24 @@ nav .nav-wrapper .brand-logo {
   padding: 0 .5em;
 }
 
-header .parallax-container {
-  height: 100vh;
+#homeHeader.row {
+  margin-bottom: 0px;
+}
+
+#homeHeader.row .parallax-container {
+  height: 60vh;
+}
+
+#homeHeader.row .parallax-container .overlay-header h1 {
+  color: #464646;
+  background-color: rgba(255, 255, 255, 0.904);
+  border-bottom: solid blue;
+}
+
+#headline p {
+  font-size: 1.3em;
+  font-weight: Lato;
+  text-align: center;
 }
 
 #featured {
@@ -82,8 +98,24 @@ header .parallax-container {
   height: 100%;
 }
 
+#reviews .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+iframe.yelp-review {
+  margin: 2.5em;
+}
+
 footer {
   background-color: #233C8A !important;
+}
+
+#social {
+  background-color: #fff;
 }
 
 .social-list {
@@ -100,7 +132,7 @@ footer {
 }
 
 .social-icon {
-  width: 100%;
+  width: 2.5em;
 }
 
 .parallax {
@@ -213,6 +245,9 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
+  .overlay-header {
+    left: 0;
+  }
   .show-on-medium-and-down {
     display: block !important;
   }
