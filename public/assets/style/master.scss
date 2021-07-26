@@ -7,7 +7,9 @@
 
 @import './components/navbar';
 @import './components/header';
+@import './components/headline';
 @import './components/featured';
+@import './components/reviews';
 @import './components/footer';
 
 .parallax{
@@ -113,6 +115,9 @@
   }
   
   @media only screen and (max-width: 992px) {
+    .overlay-header{
+      left: 0;
+    }
     .show-on-medium-and-down {
       display: block !important;
     }
