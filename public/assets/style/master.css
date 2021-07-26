@@ -109,24 +109,41 @@ footer {
 
 .overlay-header {
   position: absolute;
-  top: 50%;
+  bottom: 10%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.overlay-header h1 {
+  color: white;
+  background-color: rgba(70, 70, 70, 0.829);
 }
 
 .overlay-header .btn {
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 500;
   height: auto !important;
-  padding: 1em;
+  padding: 0 1em;
+  width: 50%;
+  margin: auto;
 }
 
 #headline {
   padding: 1em;
   background-color: #233C8A;
   color: white;
+}
+
+#headline h3 {
+  color: gold;
 }
 
 @media only screen and (max-width: 600px) {
