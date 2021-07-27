@@ -1,0 +1,29 @@
+#contact{
+    .container{
+        height: 250px;
+        .col{
+            height: 100%;
+        }
+        .quote{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn{
+                background-color: gold;
+                color: #233C8A;
+                border: solid #233C8A;
+                font-weight: 600;
+            }
+        }
+        .contact-links{
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            .contact-links-flex{
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+            }
+        }
+    }
+}

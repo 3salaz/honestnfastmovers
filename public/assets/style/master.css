@@ -28,10 +28,75 @@ nav .nav-wrapper .brand-logo {
   height: 60vh;
 }
 
+#homeHeader.row .parallax-container .overlay-header {
+  z-index: 101;
+}
+
 #homeHeader.row .parallax-container .overlay-header h1 {
   color: #464646;
   background-color: rgba(255, 255, 255, 0.904);
   border-bottom: solid blue;
+}
+
+#contact .container {
+  height: 250px;
+}
+
+#contact .container .col {
+  height: 100%;
+}
+
+#contact .container .quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .container .quote .btn {
+  background-color: gold;
+  color: #233C8A;
+  border: solid #233C8A;
+  font-weight: 600;
+}
+
+#contact .container .contact-links {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .container .contact-links .contact-links-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+#headline {
+  padding: 1em;
+  background-color: #233C8A;
+  color: white;
+}
+
+#headline h4 {
+  color: gold;
 }
 
 #headline p {
@@ -99,15 +164,14 @@ nav .nav-wrapper .brand-logo {
 }
 
 #reviews .container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   max-height: 300px;
   overflow-y: scroll;
 }
 
 iframe.yelp-review {
-  margin: 2.5em;
+  max-width: none !important;
+  min-width: none !important;
+  width: 100% !important;
 }
 
 footer {
@@ -166,16 +230,6 @@ footer {
   padding: 0 1em;
   width: 50%;
   margin: auto;
-}
-
-#headline {
-  padding: 1em;
-  background-color: #233C8A;
-  color: white;
-}
-
-#headline h3 {
-  color: gold;
 }
 
 @media only screen and (max-width: 600px) {
